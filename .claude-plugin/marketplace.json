@@ -1,12 +1,15 @@
 {
-  "name": "jojo-in-runtime marketplace",
+  "name": "jojo-in-runtime-marketplace",
   "owner": {
     "name": "jojo-in-runtime",
     "email": "jojo-in-runtime@gmail.com"
   },
   "plugins": [
     {
-
+      "name": "lead-gen-plugin",
+      "source": "./plugins/lead-gen-plugin",
+      "description": "ระบบหาลูกค้าใหม่แบบครบวงจร — ค้นหาเป้าหมาย enrich ข้อมูล ให้คะแนน ร่างข้อความ จนถึงอัปเดต CRM",
+      "version": "1.0.0"
     }
   ]
 }

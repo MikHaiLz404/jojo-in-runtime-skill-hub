@@ -1,0 +1,8 @@
+{
+  "name": "emily-presentation-system",
+  "description": "Generate data-driven and sprint presentation decks",
+  "version": "1.0.0",
+  "author": {
+    "name": "emily club"
+  }
+}
