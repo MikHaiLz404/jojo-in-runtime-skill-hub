@@ -16,7 +16,8 @@ jojo-in-runtime-skill-hub/
 │   ├── lead-gen-plugin/          # Lead generation automation
 │   ├── emily-unreal-explorer/    # Unreal Engine skill hub
 │   ├── emily-brand-unified-guidelines/  # Design system
-│   └── emily-presentation-system/  # Presentation generator
+│   ├── emily-presentation-system/  # Presentation generator
+│   └── playwright-cli/          # Browser automation with Playwright
 ├── auto-lead-gen-template/       # Lead gen template (separate repo)
 └── README.md
 ```
@@ -37,6 +38,7 @@ This repo is a Claude Code plugin marketplace. Install with:
 | `emily-unreal-explorer` | Skill hub for Unreal Engine: UE features, C++ patterns, Sequencer, game architecture |
 | `emily-brand-unified-guidelines` | Unified color system: UI + Presentation + Data visualization |
 | `emily-presentation-system` | Data-driven presentation deck generator |
+| `playwright-cli` | Browser automation with Playwright (requires Node.js) |
 
 ## Plugin Structure
 

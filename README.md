@@ -14,6 +14,7 @@ This repository hosts plugins and skills for [Claude Code](https://claude.ai/cod
 | **emily-unreal-explorer** | Skill hub for Unreal Engine development — UE features, C++ patterns, Sequencer, game architecture |
 | **emily-brand-unified-guidelines** | Unified color system for UI, presentation, and data visualization |
 | **emily-presentation-system** | Data-driven and sprint presentation deck generator |
+| **playwright-cli** | Automate browser interactions, test web pages with Playwright (requires Node.js) |
 
 ## Installation
 
@@ -24,6 +25,7 @@ This repository hosts plugins and skills for [Claude Code](https://claude.ai/cod
 # Install a plugin
 /plugin install lead-gen-plugin@jojo-in-runtime-marketplace
 /plugin install emily-unreal-explorer@jojo-in-runtime-marketplace
+/plugin install playwright-cli@jojo-in-runtime-marketplace
 ```
 
 ## Available Skills
