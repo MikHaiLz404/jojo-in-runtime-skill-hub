@@ -17,7 +17,7 @@
     {
       "name": "emily-unreal-explorer",
       "source": "./plugins/emily-unreal-explorer",
-      "description": "A skill base to calling all unreal epic related skill sets — includes UE features, C++ patterns, Sequencer, and game architecture",
+      "description": "A skill base to calling all unreal epic related skill sets — includes UE features, C++ patterns, Sequencer, and game architecture. Works standalone but best with unreal-mcp for direct editor integration.",
       "version": "1.0.0",
       "author": {
         "name": "emily club"
@@ -40,7 +40,12 @@
           "name": "unreal-sequencer",
           "author": "Unreal Engine Documentation"
         }
-      ]
+      ],
+      "requirements": {
+        "optional": {
+          "unreal-mcp": "For direct Unreal Editor integration. Without it, provides guidance and code examples only."
+        }
+      }
     },
     {
       "name": "emily-brand-unified-guidelines",

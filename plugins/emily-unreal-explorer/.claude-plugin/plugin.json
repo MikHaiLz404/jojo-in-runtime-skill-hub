@@ -23,5 +23,16 @@
       "name": "unreal-sequencer",
       "author": "Unreal Engine Documentation"
     }
-  ]
+  ],
+  "requirements": {
+    "optional": {
+      "unreal-mcp": {
+        "description": "Unreal Engine MCP server for direct editor integration. Without it, skill provides guidance only.",
+        "url": "https://docs.anthropic.com/en/docs/claude-code/mcp"
+      }
+    }
+  },
+  "constraints": {
+    "without-mcp": "Skill provides guidance and code examples only - cannot directly interact with Unreal Editor"
+  }
 }
