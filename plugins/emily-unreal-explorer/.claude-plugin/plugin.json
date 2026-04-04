@@ -4,5 +4,24 @@
   "version": "1.0.0",
   "author": {
     "name": "emily club"
-  }
+  },
+  "credits": [
+    {
+      "name": "game-developer",
+      "author": "Jeffallan",
+      "source": "https://github.com/Jeffallan"
+    },
+    {
+      "name": "unreal-engine-53-feature-knowledge",
+      "author": "Unreal Engine Documentation"
+    },
+    {
+      "name": "unreal-engine-cpp-pro",
+      "author": "Unreal Engine Community"
+    },
+    {
+      "name": "unreal-sequencer",
+      "author": "Unreal Engine Documentation"
+    }
+  ]
 }

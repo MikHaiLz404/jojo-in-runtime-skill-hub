@@ -4,5 +4,18 @@
   "version": "1.0.0",
   "author": {
     "name": "emily club"
-  }
+  },
+  "credits": [
+    {
+      "name": "data-storytelling"
+    },
+    {
+      "name": "visualization-expert",
+      "author": "awesome-llm-apps"
+    },
+    {
+      "name": "presentation-generation",
+      "author": "emily club"
+    }
+  ]
 }

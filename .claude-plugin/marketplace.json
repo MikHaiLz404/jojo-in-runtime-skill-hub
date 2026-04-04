@@ -9,7 +9,67 @@
       "name": "lead-gen-plugin",
       "source": "./plugins/lead-gen-plugin",
       "description": "ระบบหาลูกค้าใหม่แบบครบวงจร — ค้นหาเป้าหมาย enrich ข้อมูล ให้คะแนน ร่างข้อความ จนถึงอัปเดต CRM",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "author": {
+        "name": "jojo-in-runtime"
+      }
+    },
+    {
+      "name": "emily-unreal-explorer",
+      "source": "./plugins/emily-unreal-explorer",
+      "description": "A skill base to calling all unreal epic related skill sets — includes UE features, C++ patterns, Sequencer, and game architecture",
+      "version": "1.0.0",
+      "author": {
+        "name": "emily club"
+      },
+      "credits": [
+        {
+          "name": "game-developer",
+          "author": "Jeffallan",
+          "source": "https://github.com/Jeffallan"
+        },
+        {
+          "name": "unreal-engine-53-feature-knowledge",
+          "author": "Unreal Engine Documentation"
+        },
+        {
+          "name": "unreal-engine-cpp-pro",
+          "author": "Unreal Engine Community"
+        },
+        {
+          "name": "unreal-sequencer",
+          "author": "Unreal Engine Documentation"
+        }
+      ]
+    },
+    {
+      "name": "emily-brand-unified-guidelines",
+      "source": "./plugins/emily-brand-unified-guidelines",
+      "description": "unified color system for UI, presentation, and data visualization with clear separation of concerns",
+      "version": "2.0.0",
+      "author": {
+        "name": "emily club"
+      }
+    },
+    {
+      "name": "emily-presentation-system",
+      "source": "./plugins/emily-presentation-system",
+      "description": "Generate data-driven and sprint presentation decks",
+      "version": "1.0.0",
+      "author": {
+        "name": "emily club"
+      },
+      "credits": [
+        {
+          "name": "data-storytelling"
+        },
+        {
+          "name": "visualization-expert"
+        },
+        {
+          "name": "presentation-generation"
+        }
+      ]
     }
   ]
 }
