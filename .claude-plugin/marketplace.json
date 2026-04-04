@@ -1,0 +1,12 @@
+{
+  "name": "jojo-in-runtime marketplace",
+  "owner": {
+    "name": "jojo-in-runtime",
+    "email": "jojo-in-runtime@gmail.com"
+  },
+  "plugins": [
+    {
+
+    }
+  ]
+}
