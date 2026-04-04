@@ -1,0 +1,68 @@
+{
+  "name": "playwright-cli",
+  "description": "Automate browser interactions, test web pages, and work with Playwright tests. Requires Node.js. Claude in Chrome extension is optional but recommended for best experience.",
+  "version": "1.0.0",
+  "author": {
+    "name": "playwright-cli"
+  },
+  "requirements": {
+    "node": {
+      "version": ">=16.0.0",
+      "description": "Node.js must be installed to run playwright-cli"
+    },
+    "npm": {
+      "description": "npm comes with Node.js, used to install playwright-cli"
+    },
+    "browser": {
+      "description": "Chrome browser (optional but recommended for --extension mode)"
+    }
+  },
+  "constraints": {
+    "plan": "This skill works on all plans, but some advanced features may have rate limits on Free plan. Paid plans recommended for heavy usage.",
+    "installation": "Run: npm install -g @playwright/cli@latest"
+  },
+  "skills": [
+    {
+      "name": "playwright-cli",
+      "path": "SKILL.md"
+    }
+  ],
+  "references": [
+    {
+      "name": "playwright-tests",
+      "path": "references/playwright-tests.md"
+    },
+    {
+      "name": "request-mocking",
+      "path": "references/request-mocking.md"
+    },
+    {
+      "name": "running-code",
+      "path": "references/running-code.md"
+    },
+    {
+      "name": "session-management",
+      "path": "references/session-management.md"
+    },
+    {
+      "name": "storage-state",
+      "path": "references/storage-state.md"
+    },
+    {
+      "name": "test-generation",
+      "path": "references/test-generation.md"
+    },
+    {
+      "name": "tracing",
+      "path": "references/tracing.md"
+    },
+    {
+      "name": "video-recording",
+      "path": "references/video-recording.md"
+    },
+    {
+      "name": "element-attributes",
+      "path": "references/element-attributes.md"
+    }
+  ]
+}

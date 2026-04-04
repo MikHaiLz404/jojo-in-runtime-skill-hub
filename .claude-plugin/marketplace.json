@@ -70,6 +70,19 @@
           "name": "presentation-generation"
         }
       ]
+    },
+    {
+      "name": "playwright-cli",
+      "source": "./plugins/playwright-cli",
+      "description": "Automate browser interactions, test web pages, and work with Playwright tests. Requires Node.js. Works on all plans.",
+      "version": "1.0.0",
+      "author": {
+        "name": "playwright-cli"
+      },
+      "requirements": {
+        "node": ">=16.0.0",
+        "browser": "Chrome (optional, for --extension mode)"
+      }
     }
   ]
 }
