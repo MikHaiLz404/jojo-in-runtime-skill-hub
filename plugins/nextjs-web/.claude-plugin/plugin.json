@@ -1,6 +1,6 @@
 {
   "name": "nextjs-web",
-  "description": "Complete Next.js web development plugin: React 18+, App Router, Server Components, TypeScript, Tailwind CSS, Supabase Auth, and Turbopack optimization.",
+  "description": "Complete Next.js web development plugin: React 18+, App Router, Server Components, TypeScript, Tailwind CSS, Supabase Auth, Turbopack, and UI/UX skills.",
   "version": "1.0.0",
   "author": {
     "name": "nextjs-web"
@@ -21,7 +21,23 @@
   "skills": [
     {
       "name": "nextjs-web",
-      "path": "SKILL.md"
+      "path": "skills/nextjs-web.md"
+    },
+    {
+      "name": "nextjs-supabase-auth",
+      "path": "skills/nextjs-supabase-auth/SKILL.md"
+    },
+    {
+      "name": "nextjs-turbopack",
+      "path": "skills/nextjs-turbopack/SKILL.md"
+    },
+    {
+      "name": "react-nextjs-development",
+      "path": "skills/react-nextjs-development/SKILL.md"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "path": "skills/ui-ux-pro-max/SKILL.md"
     }
   ],
   "references": [
