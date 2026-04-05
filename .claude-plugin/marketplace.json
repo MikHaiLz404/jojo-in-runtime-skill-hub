@@ -88,6 +88,29 @@
         "node": ">=16.0.0",
         "browser": "Chrome (optional, for --extension mode)"
       }
+    },
+    {
+      "name": "nextjs-web",
+      "source": "./plugins/nextjs-web",
+      "description": "Complete Next.js web development: React 18+, App Router, Server Components, TypeScript, Tailwind CSS, Supabase Auth, and Turbopack optimization.",
+      "version": "1.0.0",
+      "author": {
+        "name": "nextjs-web"
+      },
+      "requirements": {
+        "node": ">=18.0.0"
+      },
+      "credits": [
+        {
+          "name": "nextjs-supabase-auth"
+        },
+        {
+          "name": "nextjs-turbopack"
+        },
+        {
+          "name": "react-nextjs-development"
+        }
+      ]
     }
   ]
 }

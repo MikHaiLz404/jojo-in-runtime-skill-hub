@@ -15,6 +15,7 @@ This repository hosts plugins and skills for [Claude Code](https://claude.ai/cod
 | **emily-brand-unified-guidelines** | Unified color system for UI, presentation, and data visualization |
 | **emily-presentation-system** | Data-driven and sprint presentation deck generator |
 | **playwright-cli** | Automate browser interactions, test web pages with Playwright (requires Node.js) |
+| **nextjs-web** | Complete Next.js web development — React 18+, App Router, Server Components, TypeScript, Tailwind CSS, Supabase Auth, Turbopack |
 
 ## Installation
 
@@ -26,6 +27,7 @@ This repository hosts plugins and skills for [Claude Code](https://claude.ai/cod
 /plugin install lead-gen-plugin@jojo-in-runtime-marketplace
 /plugin install emily-unreal-explorer@jojo-in-runtime-marketplace
 /plugin install playwright-cli@jojo-in-runtime-marketplace
+/plugin install nextjs-web@jojo-in-runtime-marketplace
 ```
 
 ## Available Skills
@@ -36,6 +38,11 @@ This repository hosts plugins and skills for [Claude Code](https://claude.ai/cod
 - `prospect-research` — Research target companies
 - `outreach-writer` — Draft personalized emails
 - `crm-update` — Update CRM records
+
+### Web Development (via nextjs-web)
+- `nextjs-turbopack` — Turbopack optimization and dev speed
+- `nextjs-supabase-auth` — Supabase Auth integration
+- `react-nextjs-development` — Full React/Next.js workflow
 
 ### Game Development (via emily-unreal-explorer)
 - `unreal-engine-53-feature-knowledge` — UE 5.3 features

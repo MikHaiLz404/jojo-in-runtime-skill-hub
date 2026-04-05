@@ -1,0 +1,49 @@
+{
+  "name": "nextjs-web",
+  "description": "Complete Next.js web development plugin: React 18+, App Router, Server Components, TypeScript, Tailwind CSS, Supabase Auth, and Turbopack optimization.",
+  "version": "1.0.0",
+  "author": {
+    "name": "nextjs-web"
+  },
+  "requirements": {
+    "node": {
+      "version": ">=18.0.0",
+      "description": "Node.js 18+ required for Next.js 14+ development"
+    },
+    "npm": {
+      "description": "npm comes with Node.js"
+    }
+  },
+  "constraints": {
+    "plan": "Works on all plans. Recommended for Next.js 14+ projects with App Router.",
+    "installation": "No additional installation required - uses Next.js built-in features."
+  },
+  "skills": [
+    {
+      "name": "nextjs-web",
+      "path": "SKILL.md"
+    }
+  ],
+  "references": [
+    {
+      "name": "app-router-patterns",
+      "path": "references/app-router-patterns.md"
+    },
+    {
+      "name": "server-components",
+      "path": "references/server-components.md"
+    },
+    {
+      "name": "turbopack-guide",
+      "path": "references/turbopack-guide.md"
+    },
+    {
+      "name": "supabase-auth-guide",
+      "path": "references/supabase-auth-guide.md"
+    },
+    {
+      "name": "deployment",
+      "path": "references/deployment.md"
+    }
+  ]
+}
