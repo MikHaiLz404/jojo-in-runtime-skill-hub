@@ -9,19 +9,15 @@
     "node": {
       "version": ">=18.0.0",
       "description": "Node.js 18+ required for Next.js 14+ development"
-    },
-    "npm": {
-      "description": "npm comes with Node.js"
     }
   },
   "constraints": {
-    "plan": "Works on all plans. Recommended for Next.js 14+ projects with App Router.",
-    "installation": "No additional installation required - uses Next.js built-in features."
+    "plan": "Works on all plans. Recommended for Next.js 14+ projects with App Router."
   },
   "skills": [
     {
       "name": "nextjs-web",
-      "path": "skills/nextjs-web.md"
+      "path": "SKILL.md"
     },
     {
       "name": "nextjs-supabase-auth",
