@@ -1,0 +1,58 @@
+{
+  "cardsV2": [
+    {
+      "cardId": "daily-summary-template",
+      "card": {
+        "header": {
+          "title": "🌸 สรุปงานวันนี้",
+          "subtitle": "REPLACE_DATE"
+        },
+        "sections": [
+          {
+            "header": "✅ Done",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "• REPLACE_TASK_1<br>• REPLACE_TASK_2<br>• REPLACE_TASK_3"
+                }
+              }
+            ]
+          },
+          {
+            "header": "🚧 In Progress",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "• REPLACE_WIP_1<br>• REPLACE_WIP_2"
+                }
+              }
+            ]
+          },
+          {
+            "header": "📌 Next",
+            "widgets": [
+              {
+                "decoratedText": {
+                  "startIcon": {"knownIcon": "CLOCK"},
+                  "topLabel": "Deadline",
+                  "text": "*REPLACE_DEADLINE*",
+                  "bottomLabel": "REPLACE_CONTEXT"
+                }
+              }
+            ]
+          },
+          {
+            "header": "💧 Emily's reminder",
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "_อย่าลืมดื่มน้ำและพักสายตาเป็นระยะนะคะ~_"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

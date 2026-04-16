@@ -1,0 +1,53 @@
+{
+  "cardsV2": [
+    {
+      "cardId": "task-complete",
+      "card": {
+        "header": {
+          "title": "✅ Scheduled task เสร็จแล้ว",
+          "subtitle": "REPLACE_TASK_NAME"
+        },
+        "sections": [
+          {
+            "widgets": [
+              {
+                "decoratedText": {
+                  "startIcon": {"knownIcon": "CONFIRMATION_NUMBER_ICON"},
+                  "topLabel": "Task ID",
+                  "text": "REPLACE_TASK_ID"
+                }
+              },
+              {
+                "decoratedText": {
+                  "startIcon": {"knownIcon": "CLOCK"},
+                  "topLabel": "Runtime",
+                  "text": "REPLACE_DURATION"
+                }
+              },
+              {"divider": {}},
+              {
+                "textParagraph": {
+                  "text": "*สรุปผล:*<br>REPLACE_SUMMARY"
+                }
+              }
+            ]
+          },
+          {
+            "widgets": [
+              {
+                "buttonList": {
+                  "buttons": [
+                    {
+                      "text": "ดู log",
+                      "onClick": {"openLink": {"url": "REPLACE_LOG_URL"}}
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "_comment": "Template config — copy ไปที่ ~/.config/emily-gchat/webhooks.json หรือใช้ manage_webhooks.py add แทน (แนะนำ)",
+  "spaces": {
+    "daily-summary": {
+      "url": "https://chat.googleapis.com/v1/spaces/AAAAAAAAAAA/messages?key=YOUR_KEY&token=YOUR_TOKEN",
+      "description": "ห้องสรุปงานรายวันของ Jojo — ใช้กับ schedule + productivity:update"
+    },
+    "dev-alerts": {
+      "url": "https://chat.googleapis.com/v1/spaces/BBBBBBBBBBB/messages?key=YOUR_KEY&token=YOUR_TOKEN",
+      "description": "แจ้งเตือน deploy / build / incident ให้ทีม dev"
+    },
+    "team-general": {
+      "url": "https://chat.googleapis.com/v1/spaces/CCCCCCCCCCC/messages?key=YOUR_KEY&token=YOUR_TOKEN",
+      "description": "ห้องทีมทั่วไป — ใช้สำหรับประกาศและ reminder"
+    }
+  }
+}

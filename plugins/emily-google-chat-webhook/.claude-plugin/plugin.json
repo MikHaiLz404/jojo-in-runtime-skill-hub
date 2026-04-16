@@ -1,0 +1,9 @@
+{
+  "name": "emily-google-chat-webhook",
+  "version": "0.1.0",
+  "description": "Send messages to Google Chat spaces via Incoming Webhook — plain text, rich formatting, and Card v2. Supports multiple space presets stored locally.",
+  "author": {
+    "name": "Jojo (w.ekaphop@gmail.com)"
+  },
+  "keywords": ["google-chat", "webhook", "notification", "card-v2", "gchat"]
+}

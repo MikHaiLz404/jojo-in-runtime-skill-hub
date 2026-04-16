@@ -1,0 +1,56 @@
+{
+  "cardsV2": [
+    {
+      "cardId": "error-alert",
+      "card": {
+        "header": {
+          "title": "⚠️ Error Alert",
+          "subtitle": "REPLACE_SOURCE_SYSTEM"
+        },
+        "sections": [
+          {
+            "widgets": [
+              {
+                "decoratedText": {
+                  "startIcon": {"knownIcon": "DESCRIPTION"},
+                  "topLabel": "Error",
+                  "text": "*REPLACE_ERROR_TYPE*",
+                  "bottomLabel": "REPLACE_TIMESTAMP"
+                }
+              },
+              {"divider": {}},
+              {
+                "textParagraph": {
+                  "text": "*Message:*<br>```REPLACE_ERROR_MESSAGE```"
+                }
+              },
+              {
+                "textParagraph": {
+                  "text": "*Stack trace (first 5 lines):*<br>```REPLACE_STACK```"
+                }
+              }
+            ]
+          },
+          {
+            "widgets": [
+              {
+                "buttonList": {
+                  "buttons": [
+                    {
+                      "text": "ดู full log",
+                      "onClick": {"openLink": {"url": "REPLACE_LOG_URL"}}
+                    },
+                    {
+                      "text": "เปิด runbook",
+                      "onClick": {"openLink": {"url": "REPLACE_RUNBOOK_URL"}}
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
