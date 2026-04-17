@@ -121,6 +121,16 @@
         "name": "Jojo (w.ekaphop@gmail.com)"
       },
       "keywords": ["google-chat", "webhook", "notification", "card-v2", "gchat"]
+    },
+    {
+      "name": "gitlab-sheets-sync",
+      "source": "./plugins/gitlab-sheets-sync",
+      "description": "Sync data between GitLab and Google Sheets",
+      "version": "0.1.0",
+      "author": {
+        "name": "Jojo (w.ekaphop@gmail.com)"
+      },
+      "keywords": ["gitlab", "google-sheets", "sync", "data"]
     }
   ]
 }
