@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Sync data between GitLab and Google Sheets",
   "author": {
-    "name": "Jojo (w.ekaphop@gmail.com)"
+    "name": "jojo-in-runtime"
   },
   "keywords": ["gitlab", "google-sheets", "sync", "data"]
 }
