@@ -1,0 +1,8 @@
+{
+  "repo_path": "/sessions/modest-relaxed-albattani/mnt/project-rp",
+  "output_folder": "/sessions/modest-relaxed-albattani/mnt/rp-data-analysis/",
+  "designer_team": [
+    "Tacha Prommee"
+  ],
+  "_note": "เพิ่มชื่อ designer ใน designer_team ได้เลย ใช้ชื่อเดียวกับที่ปรากฏใน git commit (git log --format='%an')"
+}

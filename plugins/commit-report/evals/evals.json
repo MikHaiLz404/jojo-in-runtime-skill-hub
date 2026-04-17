@@ -1,0 +1,213 @@
+{
+  "skill_name": "commit-balancing-summary",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "ดู commit 9754bea หน่อย สรุปว่า balancing เปลี่ยนอะไรบ้างเพื่อส่งให้ DEV กับ QA",
+      "expected_output": "An .xlsx file with multiple sheets covering: Nun HitStun removal, KnockBack reduction for Nun heavy attacks, FingerSerpent02 speed/cooldown changes, Enemy resistance removal (Devouted/FingerSerpent/Seeker), AI behavior cooldown change, and a QA checklist. Summary sheet should show commit metadata.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "xlsx_exists",
+          "description": "An .xlsx file is produced in outputs",
+          "type": "file_exists",
+          "pattern": "*.xlsx"
+        },
+        {
+          "id": "multiple_sheets",
+          "description": "xlsx has at least 3 sheets (Summary, Changes, QA Checklist)",
+          "type": "xlsx_sheet_count",
+          "min_sheets": 3
+        },
+        {
+          "id": "nun_changes_present",
+          "description": "Report mentions Nun character changes (HitStun or KnockBack)",
+          "type": "content_contains",
+          "keywords": ["Nun", "nun", "HitStun", "KnockBack"]
+        },
+        {
+          "id": "commit_metadata_present",
+          "description": "Summary sheet references commit hash 9754bea",
+          "type": "content_contains",
+          "keywords": ["9754bea"]
+        },
+        {
+          "id": "qa_checklist_present",
+          "description": "A QA checklist sheet or section is included",
+          "type": "content_contains",
+          "keywords": ["QA", "Checklist", "checklist", "Test Case"]
+        },
+        {
+          "id": "resistance_changes_present",
+          "description": "Report mentions resistance removal (HitStunResistance or KnockBackResistance)",
+          "type": "content_contains",
+          "keywords": ["Resistance", "resistance"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "โดยใช้ commit 7e745d2 ทำ change summary เป็น xlsx ให้หน่อย",
+      "expected_output": "An .xlsx file covering: Enemy HP +50% for Dagon/HumanCrocodile/Hunter/Stillborn03, HumanCrocodile attack pattern weight changes, Tentacle Smash cooldown removed, Dagon mission duration 240s -> 180s across all maps/presets. QA checklist with high priority items for HP changes and mission timer.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "xlsx_exists",
+          "description": "An .xlsx file is produced in outputs",
+          "type": "file_exists",
+          "pattern": "*.xlsx"
+        },
+        {
+          "id": "multiple_sheets",
+          "description": "xlsx has at least 3 sheets",
+          "type": "xlsx_sheet_count",
+          "min_sheets": 3
+        },
+        {
+          "id": "hp_changes_present",
+          "description": "Report mentions HP or MaxHealth increases (+50%)",
+          "type": "content_contains",
+          "keywords": ["HP", "MaxHealth", "Health", "7500", "4500"]
+        },
+        {
+          "id": "mission_duration_present",
+          "description": "Report mentions Dagon mission duration change (240s → 180s)",
+          "type": "content_contains",
+          "keywords": ["180", "240", "Duration", "Mission"]
+        },
+        {
+          "id": "humancrocodile_attack_present",
+          "description": "Report mentions HumanCrocodile attack weight or cooldown changes",
+          "type": "content_contains",
+          "keywords": ["HumanCrocodile", "Crocodile", "Tentacle", "Weight"]
+        },
+        {
+          "id": "qa_checklist_present",
+          "description": "A QA checklist section is included",
+          "type": "content_contains",
+          "keywords": ["QA", "Checklist", "checklist", "Test"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "ดู balancing commit ล่าสุดของ Tacha ให้หน่อย ทำเป็น xlsx ส่ง QA",
+      "expected_output": "Skill should find the most recent merge commit from Tacha Prommee that touched .asset files (most likely 9754bea or 7e745d2), then generate an .xlsx with multiple sheets and QA checklist. No commit hash provided by user — skill must discover it from git log.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "xlsx_exists",
+          "description": "An .xlsx file is produced even though no commit hash was given",
+          "type": "file_exists",
+          "pattern": "*.xlsx"
+        },
+        {
+          "id": "multiple_sheets",
+          "description": "xlsx has at least 3 sheets",
+          "type": "xlsx_sheet_count",
+          "min_sheets": 3
+        },
+        {
+          "id": "designer_commit_found",
+          "description": "Report references a real commit hash (7 hex chars) showing it was discovered from git log",
+          "type": "content_contains",
+          "keywords": ["9754bea", "7e745d2"]
+        },
+        {
+          "id": "tacha_author_present",
+          "description": "Report mentions Tacha as the author",
+          "type": "content_contains",
+          "keywords": ["Tacha", "tacha"]
+        },
+        {
+          "id": "qa_checklist_present",
+          "description": "A QA checklist is included",
+          "type": "content_contains",
+          "keywords": ["QA", "Checklist", "checklist", "Test"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "อยากได้ balancing report จาก commit 7e745d2 กับ 9754bea เปรียบเทียบกัน ทำเป็น xlsx",
+      "expected_output": "A comparison .xlsx with overview sheet showing both commits side by side, enemy changes sheet comparing both POCs, all changes flat table, and combined QA checklist distinguishing which items belong to which commit.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "xlsx_exists",
+          "description": "A comparison .xlsx file is produced in outputs",
+          "type": "file_exists",
+          "pattern": "*.xlsx"
+        },
+        {
+          "id": "multiple_sheets",
+          "description": "xlsx has at least 3 sheets for meaningful comparison",
+          "type": "xlsx_sheet_count",
+          "min_sheets": 3
+        },
+        {
+          "id": "both_commits_referenced",
+          "description": "Both commit hashes (7e745d2 and 9754bea) or their labels (POC 5 / POC 2.1) appear in the report",
+          "type": "content_contains_all",
+          "keyword_groups": [["7e745d2", "POC 5", "POC5"], ["9754bea", "POC 2.1", "POC21"]]
+        },
+        {
+          "id": "comparison_structure",
+          "description": "The report has a structure that enables side-by-side comparison (column headers or separate sheets per commit)",
+          "type": "content_contains",
+          "keywords": ["Commit", "POC", "Before", "After", "Compare", "เปรียบเทียบ"]
+        },
+        {
+          "id": "qa_checklist_present",
+          "description": "A QA checklist is included",
+          "type": "content_contains",
+          "keywords": ["QA", "Checklist", "Test"]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "ดู commit 8efbcfef81 ว่ามีอะไรเปลี่ยนบ้าง ทำเป็น report xlsx",
+      "expected_output": "An .xlsx with a Prefab/Scene sheet (no Balance sheet since no .asset files changed). Should show Nun prefab changes (VFX objects added/removed), QA checklist focused on VFX/animation testing. No balance sheet expected.",
+      "files": [],
+      "assertions": [
+        {
+          "id": "xlsx_exists",
+          "description": "An .xlsx file is produced in outputs",
+          "type": "file_exists",
+          "pattern": "*.xlsx"
+        },
+        {
+          "id": "multiple_sheets",
+          "description": "xlsx has at least 3 sheets",
+          "type": "xlsx_sheet_count",
+          "min_sheets": 3
+        },
+        {
+          "id": "no_balance_sheet",
+          "description": "No Balance sheet (commit has no .asset balance data)",
+          "type": "sheet_not_named",
+          "name": "⚖️ Balance Changes"
+        },
+        {
+          "id": "prefab_sheet_present",
+          "description": "Prefab/Scene sheet is present",
+          "type": "sheet_named",
+          "name": "🎮 Prefab+Scene"
+        },
+        {
+          "id": "nun_prefab_present",
+          "description": "Report mentions Nun prefab changes",
+          "type": "content_contains",
+          "keywords": ["Nun", "nun", "GICH002", "prefab"]
+        },
+        {
+          "id": "qa_checklist_present",
+          "description": "A QA checklist is included",
+          "type": "content_contains",
+          "keywords": ["QA", "Checklist", "Test"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "commit-report",
+    "description": "generate a report of commits in a repository, including commit messages, authors, and dates",
+    "version": "1.0.0",
+    "author": {
+        "name": "jojo-in-runtime"
+    }
+}

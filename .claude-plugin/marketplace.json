@@ -131,6 +131,15 @@
         "name": "Jojo (w.ekaphop@gmail.com)"
       },
       "keywords": ["gitlab", "google-sheets", "sync", "data"]
+    },
+    {
+      "name": "commit-report",
+      "source": "./plugins/commit-report",
+      "description": "generate a report of commits in a repository, including commit messages, authors, and dates",
+      "version": "1.0.0",
+      "author": {
+        "name": "jojo-in-runtime"
+      }
     }
   ]
 }
