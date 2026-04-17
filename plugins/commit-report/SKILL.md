@@ -1,14 +1,14 @@
 ---
 name: commit-report
-description: >
-  Generates a comprehensive .xlsx PR/commit report for any type of Unity game commit —
-  balance data, code, prefabs, scenes, animations, or VFX. Adapts the report automatically
-  based on what changed. Use for any request involving reviewing what a commit or PR did,
-  summarizing for DEV/QA/GD/Producer, or finding team member commits.
-  Triggers on: "ดู commit", "สรุป PR", "commit เปลี่ยนอะไร", "ทำ report จาก commit",
-  "PR นี้มีอะไรบ้าง", "หา commit ของ [ชื่อ]", "commit ล่าสุดของ designer",
-  "what changed in this PR", "summarize this commit for QA", "PR report",
-  "commit ของ [ชื่อคน]", or any request to review or report on what a commit/PR changed.
+description: Generates a comprehensive .xlsx PR/commit report for any type of Unity game commit — balance data, code, prefabs, scenes, animations, or VFX. Adapts the report automatically based on what changed. Use for any request involving reviewing what a commit or PR did, summarizing for DEV/QA/GD/Producer, or finding team member commits. Triggers on: "ดู commit", "สรุป PR", "commit เปลี่ยนอะไร", "ทำ report จาก commit", "PR นี้มีอะไรบ้าง", "หา commit ของ [ชื่อ]", "commit ล่าสุดของ designer", "what changed in this PR", "summarize this commit for QA", "PR report", "commit ของ [ชื่อคน]", or any request to review or report on what a commit/PR changed.
+tags:
+  - git
+  - report
+  - excel
+  - unity
+author: jojo-in-runtime
+version: 1.0.0
+updated: 2026-04-17
 ---
 
 # Commit Report Skill
