@@ -6,7 +6,17 @@ description: >
   "summarize แล้วส่งเข้า chat", "ส่งสรุป daily ไปใน chat", "post to Google Chat",
   "send to chat", "notify team", or when another skill (schedule, daily-briefing,
   sprint-planner) needs to broadcast its output to a Google Chat space.
-  Also use when the user wants to add, list, test, or remove webhook presets.
+  Also use when the user wants to add, list, test, or remove webhook presets.  
+model: sonnet
+tags: 
+  - skill
+  - google-chat
+  - webhook
+  - notification
+  - card-v2
+author: jojo-in-runtime
+version: 0.1.0
+updated: 2024-06-01
 ---
 
 # 🌸 Emily Google Chat Webhook Skill
