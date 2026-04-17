@@ -1,0 +1,7 @@
+# Ignore sensitive files
+api/claude-service-account.json
+data/sync_config.json
+data/gitlab_issues.json
+api/token.pickle
+*.pyc
+__pycache__/

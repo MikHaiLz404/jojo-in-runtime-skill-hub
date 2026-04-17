@@ -1,0 +1,9 @@
+{
+  "name": "gitlab-sheets-sync",
+  "version": "0.1.0",
+  "description": "Sync data between GitLab and Google Sheets",
+  "author": {
+    "name": "Jojo (w.ekaphop@gmail.com)"
+  },
+  "keywords": ["gitlab", "google-sheets", "sync", "data"]
+}
