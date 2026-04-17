@@ -1,8 +1,8 @@
 {
-    "name": "commit-report",
-    "description": "generate a report of commits in a repository, including commit messages, authors, and dates",
-    "version": "1.0.0",
-    "author": {
-        "name": "jojo-in-runtime"
-    }
+  "name": "commit-report",
+  "description": "Generates comprehensive .xlsx PR/commit reports for Unity game commits — balance data, code, prefabs, scenes, animations, VFX. Use for reviewing commits, summarizing for DEV/QA/GD/Producer, or finding team member commits.",
+  "version": "1.0.0",
+  "author": {
+    "name": "jojo-in-runtime"
+  }
 }
