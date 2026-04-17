@@ -17,18 +17,19 @@ Pulls any commit from the project's git history and generates a **`.xlsx` report
 what actually changed — balance values, code, prefabs, scenes, animations, or VFX.
 The report adapts automatically: only sheets relevant to the commit's content are included.
 
-**Repo:** `/sessions/modest-relaxed-albattani/mnt/project-rp`  
-**Script:** `/sessions/modest-relaxed-albattani/mnt/rp-data-analysis/.claude/skills/commit-report/scripts/generate_xlsx.py`  
-**Config:** `/sessions/modest-relaxed-albattani/mnt/rp-data-analysis/.claude/skills/commit-report/config.json`
+**Repo:** Set via `config.json` (key: `repo_path`) — ask user if not configured.
+**Script:** Found via `find ~ -path "*/commit-report/scripts/generate_xlsx.py" 2>/dev/null | head -1`
+**Config:** Found via `find ~ -path "*/commit-report/config.json" 2>/dev/null | head -1`
 
 ---
 
 ## ⚙️ Step 0 — Check Config
 
-Read `config.json`. If it doesn't exist, ask the user:
-1. Designer/team member names (as they appear in git)
-2. Repo path (default: `/sessions/modest-relaxed-albattani/mnt/project-rp`)
-3. Output folder (default: `/sessions/modest-relaxed-albattani/mnt/rp-data-analysis/`)
+1. Locate config: `find ~ -path "*/commit-report/config.json" 2>/dev/null | head -1`
+2. If not found, ask the user:
+   - Designer/team member names (as they appear in git, e.g. `git log --format='%an'`)
+   - Repo path (local path to the Unity project git repository)
+   - Output folder (where to save the .xlsx report)
 
 Save to `config.json` and confirm to the user.
 
@@ -53,7 +54,9 @@ Auto-select the most recent match. Show the list only if nothing matches.
 Run the script with `--detect` to see what file types changed:
 
 ```bash
-python .../generate_xlsx.py --repo <path> --commit <hash> --detect
+# Find script path first
+SCRIPT=$(find ~ -path "*/commit-report/scripts/generate_xlsx.py" 2>/dev/null | head -1)
+python "$SCRIPT" --repo <path> --commit <hash> --detect
 ```
 
 This prints a summary like:
@@ -73,7 +76,9 @@ Use this to decide which sheets to generate.
 ## 📊 Step 3 — Generate the .xlsx (main output)
 
 ```bash
-python .../generate_xlsx.py \
+# Find script path first
+SCRIPT=$(find ~ -path "*/commit-report/scripts/generate_xlsx.py" 2>/dev/null | head -1)
+python "$SCRIPT" \
   --repo <repo_path> \
   --commit <hash> \
   --output-dir <output_folder from config>

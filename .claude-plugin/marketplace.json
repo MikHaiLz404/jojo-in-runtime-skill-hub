@@ -21,30 +21,6 @@
       "version": "1.0.0",
       "author": {
         "name": "emily club"
-      },
-      "credits": [
-        {
-          "name": "game-developer",
-          "author": "Jeffallan",
-          "source": "https://github.com/Jeffallan"
-        },
-        {
-          "name": "unreal-engine-53-feature-knowledge",
-          "author": "Unreal Engine Documentation"
-        },
-        {
-          "name": "unreal-engine-cpp-pro",
-          "author": "Unreal Engine Community"
-        },
-        {
-          "name": "unreal-sequencer",
-          "author": "Unreal Engine Documentation"
-        }
-      ],
-      "requirements": {
-        "optional": {
-          "unreal-mcp": "For direct Unreal Editor integration. Without it, provides guidance and code examples only."
-        }
       }
     },
     {
@@ -63,18 +39,7 @@
       "version": "1.0.0",
       "author": {
         "name": "emily club"
-      },
-      "credits": [
-        {
-          "name": "data-storytelling"
-        },
-        {
-          "name": "visualization-expert"
-        },
-        {
-          "name": "presentation-generation"
-        }
-      ]
+      }
     },
     {
       "name": "playwright-cli",
@@ -83,10 +48,6 @@
       "version": "1.0.0",
       "author": {
         "name": "playwright-cli"
-      },
-      "requirements": {
-        "node": ">=16.0.0",
-        "browser": "Chrome (optional, for --extension mode)"
       }
     },
     {
@@ -96,21 +57,7 @@
       "version": "1.0.0",
       "author": {
         "name": "nextjs-web"
-      },
-      "requirements": {
-        "node": ">=18.0.0"
-      },
-      "credits": [
-        {
-          "name": "nextjs-supabase-auth"
-        },
-        {
-          "name": "nextjs-turbopack"
-        },
-        {
-          "name": "react-nextjs-development"
-        }
-      ]
+      }
     },
     {
       "name": "emily-google-chat-webhook",
@@ -119,8 +66,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Jojo (w.ekaphop@gmail.com)"
-      },
-      "keywords": ["google-chat", "webhook", "notification", "card-v2", "gchat"]
+      }
     },
     {
       "name": "gitlab-sheets-sync",
@@ -129,8 +75,7 @@
       "version": "0.1.0",
       "author": {
         "name": "Jojo (w.ekaphop@gmail.com)"
-      },
-      "keywords": ["gitlab", "google-sheets", "sync", "data"]
+      }
     },
     {
       "name": "commit-report",
